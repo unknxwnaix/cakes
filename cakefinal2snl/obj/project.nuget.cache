@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "sZyFhARnnnMDSApnFTx9ZVFbo4ciQn9Vm6oRuVLnx3nN+e8hncy48cL2qWksXufhkz0gcxIPEEW5W9Lu+MXRVw==",
+  "success": true,
+  "projectFilePath": "/Users/aix/Projects/cakefinal2snl/cakefinal2snl/cakefinal2snl.csproj",
+  "expectedPackageFiles": [
+    "/Users/aix/.nuget/packages/microsoft.aspnetcore.app.ref/3.1.10/microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "/Users/aix/.nuget/packages/microsoft.netcore.app.host.osx-x64/3.1.30/microsoft.netcore.app.host.osx-x64.3.1.30.nupkg.sha512",
+    "/Users/aix/.nuget/packages/microsoft.netcore.app.ref/3.1.0/microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}
