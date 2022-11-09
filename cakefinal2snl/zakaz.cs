@@ -6,98 +6,33 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Numerics;
+using System.Drawing;
+using cakefinal2snl;
 
 namespace тортики2snl
 {
     internal class zakaz
     {
-        public string[] name = new string[5];
-        public int[] cost = new int[5];
-        public static void full(int sumin, List<string> cake)
+        public static avtozak[] zakaz1;
+        public zakaz()
         {
-            string a = string.Join(", ", cake);
-            string path = "C:\\Рабочий стол\\cake\\Заказ_торта.txt";
-            File.AppendAllText(path, "Заказ от: " + DateTime.Today + "\n");
-            File.AppendAllText(path, "Ваш торт: " + a + "\n");
-            File.AppendAllText(path, "Сумма заказа: " + sumin + "\n" + "\n");
+            avtozak shape = new avtozak(new string[] { "Круглый", "Квадратный", "Треугольный", "Сердечко", "Особая" }, new int[] { 1500, 1500, 1700, 1800, 2000 });
+            avtozak size = new avtozak(new string[] { "Маленький", "Cредний", "Большой", "На заказ", "Свадебный" }, new int[] { 4000, 5200, 6500, 10000, 50000 });
+            avtozak taste = new avtozak(new string[] { "Ванильный", "Шоколадный", "Карамельный", "Ягодный", "Экзотический" }, new int[] { 1500, 1500, 1550, 1500, 2050 });
+            avtozak amount = new avtozak(new string[] { "1 корж", "2 коржа", "3 коржа", "4 коржа", "5 коржей" }, new int[] { 1300, 1600, 1900, 2200, 2500 });
+            avtozak glaze = new avtozak(new string[] { "Шоколад", "Крем", "Бизе", "Драже", "Ягоды" }, new int[] { 500, 600, 650, 750, 1000 });
+            avtozak decor = new avtozak(new string[] { "Шоколадная", "Ягодная", "Кремовая", "Особая", "Особая ++" }, new int[] { 1150, 1200, 1250, 1600, 4000 });
+            zakaz1 = new avtozak[] { shape, size, taste, amount, glaze, decor };
         }
-
-        public static zakaz Menu(int posin)
+        public avtozak Menu2 (int posin)
         {
-            zakaz shape = new zakaz();
-            shape.name[0] = "Круглый";
-            shape.name[1] = "квадратный";
-            shape.name[2] = "Треугольный";
-            shape.name[3] = "Сердечко";
-            shape.name[4] = "Особая";
-            shape.cost[0] = 500;
-            shape.cost[1] = 500;
-            shape.cost[2] = 500;
-            shape.cost[3] = 700;
-            shape.cost[4] = 800;
-            zakaz size = new zakaz();
-            size.name[0] = "Маленький";
-            size.name[1] = "Cредний";
-            size.name[2] = "Большой";
-            size.name[3] = "На заказ";
-            size.name[4] = "Свадебный";
-            size.cost[0] = 1000;
-            size.cost[1] = 1200;
-            size.cost[2] = 1500;
-            size.cost[3] = 2000;
-            size.cost[4] = 5000;
-
-            zakaz taste = new zakaz();
-            taste.name[0] = "Ванильный";
-            taste.name[1] = "Шоколадный";
-            taste.name[2] = "Карамельный";
-            taste.name[3] = "Ягодный";
-            taste.name[4] = "Кокосовый";
-            taste.cost[0] = 100;
-            taste.cost[1] = 100;
-            taste.cost[2] = 150;
-            taste.cost[3] = 200;
-            taste.cost[4] = 250;
-
-            zakaz amount = new zakaz();
-            amount.name[0] = "1 корж";
-            amount.name[1] = "2 коржа";
-            amount.name[2] = "3 коржа";
-            amount.name[3] = "4 коржа";
-            amount.name[4] = "5 коржей";
-            amount.cost[0] = 200;
-            amount.cost[1] = 400;
-            amount.cost[2] = 600;
-            amount.cost[3] = 800;
-            amount.cost[4] = 1000;
-
-            zakaz glaze = new zakaz();
-            glaze.name[0] = "Шоколад";
-            glaze.name[1] = "Крем";
-            glaze.name[2] = "Бизе";
-            glaze.name[3] = "Драже";
-            glaze.name[4] = "Ягоды";
-            glaze.cost[0] = 100;
-            glaze.cost[1] = 100;
-            glaze.cost[2] = 150;
-            glaze.cost[3] = 150;
-            glaze.cost[4] = 200;
-
-            zakaz decor = new zakaz();
-            decor.name[0] = "Шоколадная";
-            decor.name[1] = "Ягодная";
-            decor.name[2] = "Кремовая";
-            decor.name[3] = "Особая";
-            decor.name[4] = "Особая ++";
-            decor.cost[0] = 150;
-            decor.cost[1] = 150;
-            decor.cost[2] = 150;
-            decor.cost[3] = 200;
-            decor.cost[4] = 1000;
-
-            zakaz[] zakaz = new zakaz[] { shape, size, taste, amount, glaze, decor };
-            zakaz menupart = zakaz[posin];
+            avtozak menupart = zakaz1[posin];
             return menupart;
+        }
+        public void file(int sumin, List<string> cake)
+        {
+            string path = "/Users/aix/Desktop/для заказов/Заказ_торта.txt";
+            File.AppendAllText(path, "Заказ от: " + DateTime.Today + "\n" + "Ваш торт: " + string.Join(", ", cake) + "\n" + "Сумма заказа: " + sumin + "\n" + "\n");
         }
     }
 }

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "cakefinal2snl/1.0.0": {
+        "runtime": {
+          "cakefinal2snl.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "cakefinal2snl/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

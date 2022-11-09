@@ -1,0 +1,14 @@
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/bin/Debug/netcoreapp3.1/cakefinal2snl
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/bin/Debug/netcoreapp3.1/cakefinal2snl.deps.json
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/bin/Debug/netcoreapp3.1/cakefinal2snl.runtimeconfig.json
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/bin/Debug/netcoreapp3.1/cakefinal2snl.runtimeconfig.dev.json
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/bin/Debug/netcoreapp3.1/cakefinal2snl.dll
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/bin/Debug/netcoreapp3.1/cakefinal2snl.pdb
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.csproj.AssemblyReference.cache
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.GeneratedMSBuildEditorConfig.editorconfig
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.AssemblyInfoInputs.cache
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.AssemblyInfo.cs
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.csproj.CoreCompileInputs.cache
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.dll
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.pdb
+/Users/aix/Projects/cakefinal2snl/cakefinal2snl/obj/Debug/netcoreapp3.1/cakefinal2snl.genruntimeconfig.cache
